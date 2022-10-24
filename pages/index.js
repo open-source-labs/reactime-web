@@ -7,11 +7,11 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Homepage</h1>
-      <p>lorem</p>
+    <div>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>lorem</p>
       <Link href={'/info'}>
-        <a>See info</a>
+        <a className={styles.btn}>See info</a>
       </Link>
     </div>
   );
