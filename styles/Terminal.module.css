@@ -1,0 +1,55 @@
+.installationContainer {
+  position: relative;
+  margin: 0 2rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-gap: 6rem;
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+  padding: 4em 6em 4em 6em;
+  transform: scale(0.8);
+}
+
+.terminal-window {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 7em;
+}
+
+.terminal-header {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .terminal-instructions {
+    padding-left: 1em;
+  }
+}
+
+.terminalContainer {
+  min-height: 2rem !important;
+  text-align: left;
+  /* min-width: 25ch !important; */
+}
+
+.terminalContainer pre {
+  background-color: inherit;
+  margin: 0;
+}
+
+.typewriter {
+  font-size: large;
+  font-weight: 400;
+}
+
+.copy {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  cursor: pointer;
+}
