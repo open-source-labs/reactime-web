@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import StateSnapShotGIF from '../images/new-reactime.gif';
-import HistoryTree from '../images/history-tree.gif';
-import ActionComparison from '../images/action-comparison.gif';
+import StateSnapShotGIF from '../public/new-reactime.gif';
+import HistoryTree from '../public/history-tree.gif';
+import ActionComparison from '../public/action-comparison.gif';
 import { motion } from 'framer-motion';
+import styles from '../styles/GifFeatures.module.css';
+import Image from 'next/image';
 
 const GifFeatures = () => {
   const [section, setSection] = useState(0);
@@ -11,7 +13,7 @@ const GifFeatures = () => {
     <motion.div
       key={i}
       onClick={(_) => setSection(i)}
-      className="section"
+      className={styles.section}
       initial={{ backgroundColor: '#ffffff' }}
       animate={{ backgroundColor: section === i ? '#EBEBEB' : '#ffffff' }}
       whileHover={{ scale: 1.02 }}
@@ -30,8 +32,8 @@ const GifFeatures = () => {
       transition={{ type: 'spring', bounce: 0.25, duration: 0.5 }}
     >
       {section === i && (
-        <img
-          className="image"
+        <Image
+          className={styles.image}
           src={gif}
           width={1000} // Size specific to match sizes of GIFs uploaded
           height={500} // Size specific to match sizes of GIFs uploaded
@@ -43,9 +45,9 @@ const GifFeatures = () => {
   ));
 
   return (
-    <div className="container">
-      <div className="imageContainer">{imageComponents}</div>
-      <div className="sectionContainer">{sectionComponents}</div>
+    <div className={styles.container}>
+      <div className={styles.imageContainer}>{imageComponents}</div>
+      <div className={styles.sectionContainer}>{sectionComponents}</div>
     </div>
   );
 };

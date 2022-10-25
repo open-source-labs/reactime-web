@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import TerminalWindow from '../components/TerminalWindow';
+import GifFeatures from '../components/GifFeatures';
 
 export default function Home() {
   return (
@@ -49,8 +50,8 @@ export default function Home() {
             </div>
           </TerminalWindow>
         </div>
-        {/* <GifFeatures />
-        <Features>
+        <GifFeatures />
+        {/* <Features>
           <h2 style={{ color: styles.reactGreen }}>
             <strong>Additional Features</strong>
           </h2>

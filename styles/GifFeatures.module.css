@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-gap: 15px
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.section {
+  border: 1px solid lightgray;
+  border-radius: .5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+  .section h3 p {
+    margin: 0;
+  };
+
+  .section p {
+    margin-top: 5px;
+    color: gray;
+    margin: 0;
+  }
+  
+
+
+.image {
+  border-radius: .5rem;
+  margin: auto;
+}
+
+.imageContainer {
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .imageContainer {
+  width: 40vw;
+  position: relative;
+} */
