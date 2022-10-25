@@ -13,8 +13,8 @@
 .terminal-window {
   display: flex;
   justify-content: center;
-  padding-top: 5em;
-  padding-bottom: 7em;
+  /* padding-top: 5em;
+  padding-bottom: 7em; */
 }
 
 .terminal-header {
