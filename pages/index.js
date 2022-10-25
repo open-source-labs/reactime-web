@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title> Reactime | Home </title>
+        <meta name="keywords" content="reactime" />
       </Head>
       <div>
         <h1 className={styles.title}>Homepage</h1>
