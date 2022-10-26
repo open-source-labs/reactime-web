@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <footer>Copyright 2022 Reactime</footer>;
+  return <footer>Copyright © {new Date().getFullYear()} Reactime</footer>;
 };
 
 export default Footer;
