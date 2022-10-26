@@ -12,7 +12,7 @@ a {
 }
 
 .content {
-  /* max-width: 1300px; */
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ nav a {
 }
 
 nav .logo {
-  margin-right: auto;
+  margin: auto;
 }
 
 footer {
