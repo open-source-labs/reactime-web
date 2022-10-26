@@ -110,7 +110,8 @@ const PersonExpander = ({ name, handle, bio }) => {
           className="name"
           style={{ textDecoration: 'none' }}
           href={`https://github.com/${handle}`}
-          target="_blank" rel="noreferrer"
+          target="_blank"
+          rel="noreferrer"
         >
           {name}
         </a>
@@ -163,6 +164,11 @@ const Team = ({ children }) => {
                 name="Ben Michareune"
                 handle="bmichare"
                 // bio="andy"
+              />
+              <PersonExpander
+                name="Brian Yang"
+                handle="yangbrian310"
+                // bio="byang"
               />
               <PersonExpander
                 name="Bryan Lee"
@@ -244,6 +250,11 @@ const Team = ({ children }) => {
                 name="Edwin Menendez"
                 handle="edwinjmenendez"
                 // bio="edwin"
+              />
+              <PersonExpander
+                name="Emin Tahirov"
+                handle="eminthrv"
+                // bio="emin"
               />
               <PersonExpander
                 name="Ergi Shehu"
@@ -347,6 +358,11 @@ const Team = ({ children }) => {
                 // bio="lina"
               />
               <PersonExpander
+                name="Louis Lam"
+                handle="llam722"
+                // bio="llam"
+              />
+              <PersonExpander
                 name="Nate Wa Mwenze"
                 handle="nmwenz90"
                 // bio="nate"
@@ -398,6 +414,11 @@ const Team = ({ children }) => {
                 name="Ryan Dang"
                 handle="rydang"
                 // bio="ryan"
+              />
+              <PersonExpander
+                name="Samuel Tran"
+                handle="LeumasTr"
+                // bio="samtran"
               />
               <PersonExpander
                 name="Sanjay Lavingia"
