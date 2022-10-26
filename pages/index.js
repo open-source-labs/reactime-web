@@ -13,7 +13,7 @@ export default function Home() {
         <title> Reactime | Home </title>
         <meta name="keywords" content="reactime" />
       </Head>
-      <div>
+      <div className={styles.intro}>
         <h1 className={styles.title}>
           State Management and Time Travel Debugging
         </h1>

@@ -1,3 +1,10 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   color: #333;
   padding-bottom: 20px;
@@ -6,6 +13,10 @@
 
 .text {
   color: #777;
+  justify-content: center;
+  align-content: center;
+  width: 900px;
+  margin-left: 6em;
 }
 
 /* styling for the terminal window/header */
