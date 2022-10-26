@@ -5,14 +5,8 @@ const Footer = () => (
       ©
     {' '}
     {new Date().getFullYear()}
-    , Built with
+    , Reactime
     {' '}
-    <a
-      style = {{ textDecoration: 'none', color: '#ff6569', fontFamily: "Archivo" }}
-      href="https://nextjs.org/"
-    >
-Nextjs
-    </a>
   </footer>
 );
 export default Footer;
