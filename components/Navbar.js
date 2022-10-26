@@ -5,7 +5,6 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <Image src="/reactime.png" width={222} height={167} />
       </div>
       <Link href={'/'}>
         <a>Home</a>

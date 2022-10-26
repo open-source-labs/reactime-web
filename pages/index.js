@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import Image from 'next/image';
@@ -7,6 +8,7 @@ import TerminalWindow from '../components/TerminalWindow';
 import GifFeatures from '../components/GifFeatures';
 import Features from '../components/Features';
 import Team from '../components/Team';
+import { useScroll } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
         <meta name="keywords" content="reactime" />
       </Head>
       <div className={styles.intro}>
+        <Image src="/reactime.png" width={300} height={222} />
         <h1 className={styles.title}>
           State Management and Time Travel Debugging
         </h1>
