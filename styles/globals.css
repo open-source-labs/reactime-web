@@ -417,7 +417,7 @@ pre {
 .splash-info {
   text-align: center;
   transform: scale(0.9);
-
+  width: 1100px;
 }
 .splash-logo {
   display: flex;
