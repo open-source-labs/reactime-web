@@ -10,21 +10,6 @@
   transform: scale(0.8);
 }
 
-.terminal-window {
-  display: flex;
-  justify-content: center;
-  /* padding-top: 5em;
-  padding-bottom: 7em; */
-}
-
-.terminal-header {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 0;
-  line-height: 1.5rem;
-}
-
 @media only screen and (max-width: 1000px) {
   .terminal-instructions {
     padding-left: 1em;
@@ -52,4 +37,8 @@
   top: 55px;
   right: 15px;
   cursor: pointer;
+}
+
+.reactGreen {
+  color: #2D2D2F
 }

@@ -25,7 +25,7 @@ export default function Home() {
           such as component render time and render frequency.
         </p>
         <br></br>
-        <div className="terminal-window">
+        <div className={styles.terminalWindow}>
           <TerminalWindow
             command={[
               'git clone https://github.com/open-source-labs/reactime.git',
@@ -35,7 +35,7 @@ export default function Home() {
             ]}
           >
             <div>
-              <h3 className="terminal-header">
+              <h3 className={styles.terminalText}>
                 Get started easily with npm and instantly start state debugging
                 now!
                 <br />
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
         <GifFeatures />
         <Features>
-          <h2 style={{ color: styles.reactGreen }}>
+          <h2 style={styles.reactGreen}>
             <strong>Additional Features</strong>
           </h2>
         </Features>

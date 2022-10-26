@@ -8,6 +8,23 @@
   color: #777;
 }
 
+/* styling for the terminal window/header */
+
+.terminalWindow {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 5em;
+  padding-bottom: 7em; */
+}
+
+.terminalText {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
 .btn {
   display: block;
   width: 150px;
