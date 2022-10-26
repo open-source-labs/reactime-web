@@ -68,9 +68,6 @@ export default function Home() {
             <strong>Contributors</strong>
           </h2>
         </Team>
-        <Link href={'/info'}>
-          <a className={styles.btn}>See info</a>
-        </Link>
       </div>
     </>
   );
