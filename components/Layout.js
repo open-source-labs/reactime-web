@@ -5,11 +5,13 @@ import { useScroll } from 'framer-motion';
 const Layout = ({ children }) => {
   const { scrollYProgress } = useScroll();
   return (
-    <div className="content">
+    <>
       <Navbar scrollYProgress={scrollYProgress} />
-      {children}
-      <Footer />
-    </div>
+      <div className="content">
+        {children}
+        <Footer />
+      </div>
+    </>
   );
 };
 

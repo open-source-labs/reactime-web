@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Cabin&family=Oswald&display=swap');
 
 body {
   background: #f2f2f2;
@@ -16,7 +17,71 @@ a {
   margin: 0 auto;
 }
 
-nav {
+.navbarDisplay {
+  display: flex;
+}
+
+.navBarContainer {
+  z-index: 5;
+  position: fixed;
+  background-color: f2f2f2;
+  height: 4rem;
+  width: 80vw;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  top: 0;
+}
+
+.name {
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #487783;
+}
+
+.navBarIcon {
+  color: #487783;
+  font-weight: 500;
+  font-size: large;
+}
+
+.navBarIconSmall {
+  color: #487783;
+  font-weight: 500;
+  font-size: large;
+}
+
+.navBarLeft {
+  font-family: "Archivo";
+  text-decoration: none;
+}
+
+.navBarRight {
+  gap: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Archivo";
+}
+
+.navBarLeft:hover {
+  opacity: 0.75;
+}
+
+.github span {
+  gap: 5px;
+}
+
+.github div {
+  display: flex;
+  align-items: center;
+}
+
+/* nav {
   margin: 10px auto 80px;
   padding: 10px 0;
   display: flex;
@@ -31,7 +96,7 @@ nav a {
 
 nav .logo {
   margin: 0px 30% 0px 0px;
-}
+} */
 
 footer {
   display: block;
