@@ -1,0 +1,8 @@
+.feaStyle {
+    transition: all 0.3s ease-in-out;
+}
+
+.feaStyle:hover {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 20px;
+    transform: translate3d(0px, -1px, 0px);
+}
