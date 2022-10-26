@@ -46,3 +46,9 @@
   color: white;
   text-align: center;
 }
+
+/* Contributors Section */
+.TeamContainer {
+  display: grid;
+  transform: scale(0.8);
+}

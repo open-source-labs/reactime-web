@@ -6,6 +6,7 @@ import Link from 'next/link';
 import TerminalWindow from '../components/TerminalWindow';
 import GifFeatures from '../components/GifFeatures';
 import Features from '../components/Features';
+import Team from '../components/Team';
 
 export default function Home() {
   return (
@@ -59,11 +60,11 @@ export default function Home() {
           </h2>
         </Features>
 
-        {/* <Team>
+        <Team>
           <h2 style={{ color: styles.reactGreen }}>
             <strong>Contributors</strong>
           </h2>
-        </Team> */}
+        </Team>
         <Link href={'/info'}>
           <a className={styles.btn}>See info</a>
         </Link>
