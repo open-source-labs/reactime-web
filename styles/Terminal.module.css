@@ -32,7 +32,7 @@
 }
 
 .terminalContainer {
-  min-height: 2rem !important;
+  min-height: 3rem !important;
   text-align: left;
   /* min-width: 25ch !important; */
 }
@@ -43,7 +43,7 @@
 }
 
 .typewriter {
-  font-size: large;
+  font-size: larger;
   font-weight: 400;
 }
 

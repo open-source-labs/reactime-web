@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import TerminalWindow from '../components/TerminalWindow';
 import GifFeatures from '../components/GifFeatures';
+import Features from '../components/Features';
 
 export default function Home() {
   return (
@@ -45,19 +46,21 @@ export default function Home() {
                 <br />
                 2. Install dependencies inside repository
                 <br />
-                3. Start Reactime's development environment
+                3. Start Reactime's dev environment - npm run dev
+                <br />
+                4. Install react-dev-tools and Reactime chrome extensions
               </h3>
             </div>
           </TerminalWindow>
         </div>
         <GifFeatures />
-        {/* <Features>
+        <Features>
           <h2 style={{ color: styles.reactGreen }}>
             <strong>Additional Features</strong>
           </h2>
         </Features>
 
-        <Team>
+        {/* <Team>
           <h2 style={{ color: styles.reactGreen }}>
             <strong>Contributors</strong>
           </h2>
