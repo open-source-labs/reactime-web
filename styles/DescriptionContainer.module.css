@@ -1,0 +1,31 @@
+#home-features {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+#feature-1 {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 0 5em 0 5em;
+}
+
+#feature-2 {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 0 5em 0 5em;
+}
+
+#feature-3 {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 0 5em 0 5em;
+}
