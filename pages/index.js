@@ -27,8 +27,8 @@ const IndexPage = () => {
         <div style={{ margin: '80px 0 80px 0' }}>
         </div>
       <div className="splash-container">
-        <Image alt='Reactime Logo' src="/reactimeonly.png" width='500%' height='300%'/>
-        <h1 className="spash-header">
+        <Image alt='Reactime Logo' src="/reactimeonly.png" width='425%' height='300%'/>
+        <h1 className="splash-header">
           <span className="spash-header-text">
             State Management and Time Travel Debugging
           </span>
