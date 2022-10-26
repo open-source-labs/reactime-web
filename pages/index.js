@@ -1,11 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable no-unused-vars */
 import React from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../utils/NavBar';
 import Features from '../components/features';
 import Team from '../components/team';
-import Footer from '../components/footer';
+import Footer from '../utils/Footer';
 import GifFeatures from  '../containers/GifFeatures';
 import TerminalWindow from '../components/TerminalWindow';
 import { useScroll } from 'framer-motion';
@@ -24,13 +21,13 @@ const IndexPage = () => {
   return (
     <>
       <Head>
-        <title>Reactime</title>
+        <title>Reactime | Home</title>
       </Head>
       <NavBar scrollYProgress={scrollYProgress} />
         <div style={{ margin: '80px 0 80px 0' }}>
         </div>
       <div className="splash-container">
-        <Image alt='Reactime Logo' src="/ReactimeIO.png" width='800%' height='350%'/>
+        <Image alt='Reactime Logo' src="/reactimeonly.png" width='500%' height='300%'/>
         <h1 className="spash-header">
           <span className="spash-header-text">
             State Management and Time Travel Debugging

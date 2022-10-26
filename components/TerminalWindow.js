@@ -1,10 +1,8 @@
-// @ts-ignore
 import React, { Children, useState } from "react";
 import { Browser } from "react-window-ui";
 import Typewriter from "typewriter-effect";
-import { HiOutlineClipboardCopy } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { Popover, Text } from "@mantine/core";
+
 
 const TerminalWindow = ({ command, children }) => {
   const [termHover, setTermHover] = useState(false);
@@ -42,7 +40,7 @@ const TerminalWindow = ({ command, children }) => {
           }}
           whileTap={{ scale: 0.9 }}
         >
-          <Popover
+          {/* <Popover
             opened={copied}
             onClose={() => setCopied(false)}
             target={<HiOutlineClipboardCopy size={30} />}
@@ -56,7 +54,7 @@ const TerminalWindow = ({ command, children }) => {
             <div style={{ display: "flex" }}>
               <Text size='md'>Copied!</Text>
             </div>
-          </Popover>
+          </Popover> */}
         </motion.div>
       </Browser>
       {children}

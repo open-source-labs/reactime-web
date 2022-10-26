@@ -1,6 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable max-len */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import { styles, StyledDiv, StyledWrapper, StyledGrid, StyledMain, PersonExpander, ContributeLink } from './team-styles';
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { bios } from './team-bios';
 
 export const styles = {
     reactGreen: '#2D2D2F',
@@ -104,11 +103,6 @@ export const PersonExpander = ({ name, handle, bio }) => {
           <div className={isExpanded ? 'rotated' : ''} />
           <a className="name" style={{ textDecoration: 'none' }} href={`https://github.com/${handle}`} target="_blank" rel="noreferrer">{name}</a>
         </StyledExpanderHeader>
-        {isExpanded && (
-          <StyledExpanderBio>
-            {bios[bio]}
-          </StyledExpanderBio>
-        )}
       </StyledPersonExpander>
     );
   }

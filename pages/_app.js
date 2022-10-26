@@ -1,9 +1,13 @@
-// import Layout from '../components/Layout';
 import '../styles/globals.css';
+import { AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
   );
 }
 

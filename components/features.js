@@ -1,8 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable semi */
-/* eslint-disable react/jsx-filename-extension */
-
 import React from 'react';
 import ZoomInGridElement from './zoomInGridElement';
 import styled from 'styled-components';
