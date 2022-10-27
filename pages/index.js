@@ -3,7 +3,7 @@ import NavBar from '../utils/NavBar';
 import Features from '../components/features';
 import Team from '../components/team';
 import Footer from '../utils/Footer';
-import GifFeatures from  '../containers/GifFeatures';
+import GifFeatures from '../containers/GifFeatures';
 import TerminalWindow from '../components/TerminalWindow';
 import { useScroll } from 'framer-motion';
 import Image from 'next/image';
@@ -13,7 +13,7 @@ const styles = {
   reactGreen: '#2D2D2F',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
-  redCode: '#ff6569'
+  redCode: '#ff6569',
 };
 
 const IndexPage = () => {
@@ -22,12 +22,17 @@ const IndexPage = () => {
     <>
       <Head>
         <title>Reactime | Home</title>
+        {/* <link rel="icon" href="../public/favicon.ico" /> */}
       </Head>
       <NavBar scrollYProgress={scrollYProgress} />
-        <div style={{ margin: '80px 0 80px 0' }}>
-        </div>
+      <div style={{ margin: '80px 0 80px 0' }}></div>
       <div className="splash-container">
-        <Image alt='Reactime Logo' src="/reactimeonly.png" width='425%' height='300%'/>
+        <Image
+          alt="Reactime Logo"
+          src="/reactimeonly.png"
+          width="425%"
+          height="300%"
+        />
         <h1 className="splash-header">
           <span className="spash-header-text">
             State Management and Time Travel Debugging
@@ -36,25 +41,31 @@ const IndexPage = () => {
         <h3>
           <div className="splash-info">
             <p>
-              Reactime is an open source Chrome developer tool for time travel debugging and performance monitoring in React applications. Reactime enables developers to record snapshots of application state, jump between and inspect state snapshots, and monitor performance metrics such as component render time and render frequency.
+              Reactime is an open source Chrome developer tool for time travel
+              debugging and performance monitoring in React applications.
+              Reactime enables developers to record snapshots of application
+              state, jump between and inspect state snapshots, and monitor
+              performance metrics such as component render time and render
+              frequency.
             </p>
           </div>
         </h3>
-        <br/>
-        <br/>
+        <br />
+        <br />
       </div>
       <div className="terminal-window">
-      <TerminalWindow
-        command={[
-          "git clone https://github.com/open-source-labs/reactime.git",
-          "cd reactime",
-          "npm install --force",
-          "npm run build" 
-        ]}
-      >
-        <div>
-          <h3 className="terminal-header">
-            Get started easily with npm and instantly start state debugging now!
+        <TerminalWindow
+          command={[
+            'git clone https://github.com/open-source-labs/reactime.git',
+            'cd reactime',
+            'npm install --force',
+            'npm run build',
+          ]}
+        >
+          <div>
+            <h3 className="terminal-header">
+              Get started easily with npm and instantly start state debugging
+              now!
               <br />
               <br />
               1. Clone repo from Reactime GitHub
@@ -66,15 +77,15 @@ const IndexPage = () => {
               4. Install react-dev-tools and reactime as chrome extensions
               <br />
             </h3>
-        </div>
-      </TerminalWindow>
+          </div>
+        </TerminalWindow>
       </div>
-      <GifFeatures /> 
-      <Features/>
-      <Team/>
+      <GifFeatures />
+      <Features />
+      <Team />
       <Footer />
     </>
-  )
+  );
 };
 
 export default IndexPage;
