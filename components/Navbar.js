@@ -27,121 +27,13 @@ const Navbar = ({ scrollYProgress }) => {
   );
   return (
     <nav>
-    <motion.div
-      className="navBarContainer"
-      animate={{
-        boxShadow: isStarted
-          ? '0 0 20px rgba(0, 0, 0, 0.242)'
-          : '0 0 20px rgba(0, 0, 0, 0)',
-      }}
-    >
-      <a className="navBarLeft">
-        <p className="name" textDecoration="none">
-          REACTIME
-        </p>
+      <div className="logo"></div>
+      <a href="https://www.linkedin.com/company/reactime/">LinkedIn</a>
+      <a href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US">
+        Chrome
       </a>
-
-      <div className="navbarDisplay">
-        <div class="dropdown">
-          {/* <Button variant="outline" className="navBarIconList">
-            Links
-          </Button> */}
-          <div class="dropdown-content">
-            <a
-              href="https://linkedin.com/company/reactime"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {/* <Button variant="outline" className="navBarIconSmall">
-                LinkedIn
-                <div>
-                  <FontAwesomeIcon
-                    style={{ paddingLeft: '5px' }}
-                    icon={faLinkedin}
-                  />
-                </div>
-              </Button> */}
-            </a>
-            <a
-              href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {/* <Button variant="outline" className="navBarIconSmall">
-                Chrome
-                <div>
-                  <FontAwesomeIcon
-                    style={{ paddingLeft: '5px' }}
-                    icon={faChrome}
-                  />
-                </div>
-              </Button> */}
-            </a>
-            <a
-              href="https://github.com/open-source-labs/reactime"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {/* <Button variant="outline" className="navBarIconSmall">
-                GitHub
-                {stars && (
-                  <div>
-                    <AiOutlineStar /> {stars}
-                  </div>
-                )}
-              </Button> */}
-            </a>
-          </div>
-        </div>
-        <div className="navBarRight">
-          <a
-            href="https://linkedin.com/company/reactime"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="outline" className="navBarIcon">
-              LinkedIn
-              <div>
-                <FontAwesomeIcon
-                  style={{ paddingLeft: '5px' }}
-                  icon={faLinkedin}
-                />
-              </div>
-            </Button>
-          </a>
-          <a
-            href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button variant="outline" className="navBarIcon">
-              Chrome
-              <div>
-                <FontAwesomeIcon
-                  style={{ paddingLeft: '5px' }}
-                  icon={faChrome}
-                />
-              </div>
-            </Button>
-          </a>
-          <a
-            href="https://github.com/open-source-labs/reactime"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button variant="outline" className="navBarIcon">
-              GitHub
-              {stars && (
-                <div>
-                  <AiOutlineStar /> {stars}
-                </div>
-              )}
-            </Button>
-          </a>
-        </div>
-      </div>
-      </motion.div>
-      </nav>
+      <a href="https://github.com/open-source-labs/reactime">Github</a>
+    </nav>
   );
 };
 
