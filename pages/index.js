@@ -8,6 +8,7 @@ import TerminalWindow from '../components/TerminalWindow';
 import { useScroll } from 'framer-motion';
 import Image from 'next/image';
 import Head from 'next/head';
+import favicon from '../public/favicon.ico';
 
 const styles = {
   reactGreen: '#2D2D2F',
@@ -22,9 +23,9 @@ const IndexPage = () => {
     <>
       <Head>
         <title>Reactime | Home</title>
-        {/* <link rel="icon" href="../public/favicon.ico" /> */}
+        <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
       </Head>
-      <NavBar scrollYProgress={scrollYProgress} />
+      <NavBar scrollYProgress={scrollYProgress} />  
       <div style={{ margin: '80px 0 80px 0' }}></div>
       <div className="splash-container">
         <Image
